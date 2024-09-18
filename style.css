@@ -1,0 +1,223 @@
+/* .body {
+    font-family: "Roboto", sans-serif;
+     
+    
+} */
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: local('Inter'), url('./fonts/Inter-Regular.woff2') format('woff2'),
+        url('./fonts/Inter-Regular.woff') format('woff'),
+        url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    src: local('Inter'), url('./fonts/Inter-Medium.woff2') format('woff2'),
+        url('./fonts/Inter-Medium.woff') format('woff'),
+        url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: local('Inter'), url('./fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('./fonts/Inter-SemiBold.woff') format('woff'),
+        url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .header {
+      box-shadow:
+          0px 1px 6px 0px #2E2F4214,
+          0px 1px 1px 0px #2E2F4229,
+          0px 2px 1px 0px #2E2F4214;
+  }
+.flag{
+    width: 50px;
+    height: 50px;
+    margin-right: 60px;
+    margin-left: 8px;
+}
+.maps-sign{
+    width: 50px;
+    height: 50px;
+}
+
+.header-container{
+    display: flex;
+}
+.header-list{
+    display: flex;
+    gap: 40px;
+}
+
+.item-flag{
+    margin-left: auto;
+    margin-right: 80px;
+}
+.item-link{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: rgb(10, 33, 112);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-link:hover,
+.item-link:focus
+{
+color: rgb(43, 85, 224);
+}
+
+/*\\\\\\\\\\\\\\ sectoins\\\\\\\\\\\\\\\\\\\\\ */
+.secton {
+    border: 1px solid rgb(10, 33, 112);
+    border-radius: 20px;
+    height: 600px;
+    margin-top: 5px;
+    padding: 15px;
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: rgb(222, 231, 222);
+    position: absolute;
+    top: 130px;
+    left: 75px;
+}
+
+.section-title{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: rgb(10, 33, 112);
+     display: flex;
+     justify-content: center;
+}
+
+.fact-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.fact-img{
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+.fact-title{
+    margin-top: 10px;
+font-weight: 500;
+    font-size: 39px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: rgb(1, 10, 42);
+}
+/* flip- cards */
+.wrap-fact-card{
+position: relative;
+    width: 260px;
+    height: 450px;
+    transform-style: preserve-3d;
+    transition: transform 650ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fact-cart {
+    padding: 15px;
+    backface-visibility: hidden;
+    width: 260px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: rgb(5, 82, 249);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.back-fact-card{
+padding: 15px;
+width: 260px;
+height: 450px;
+ border-radius: 20px;
+border: 1px solid rgb(0, 21, 255);
+box-shadow: -11px 11px 37px 7px rgb(97, 104, 225);
+position: absolute;
+top: 0%;
+left: 0%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+transform: rotateY(180deg);
+}
+
+.wrap-fact-card:hover {
+    transform: rotateY(180deg);
+}
+
+.text{
+font-weight: 400;
+color: rgb(13, 18, 72)
+}
+.routs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.rout-list{
+    width: 240px;
+    height: 280px;
+    border: 1px solid #05061a14;
+}
