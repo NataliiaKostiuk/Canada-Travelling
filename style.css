@@ -68,6 +68,8 @@ img {
           0px 2px 1px 0px #2E2F4214;
   }
 .flag{
+    border-top: 10px;
+    border-bottom: 15px;
     width: 100px;
     height: 70px;
     margin-right: 60px;
@@ -218,6 +220,7 @@ text-align: justify;
 
 /* top rout */
 .routs{
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: clamp(10px, 2vw, 30px);
@@ -283,5 +286,17 @@ font-weight: 500;
             top: 20px;
             right: 30px;
             cursor: pointer;
+            width: 35px;
+            height: 30px;
     
+}
+
+.favourite-list{
+font-weight: 700;
+    font-size: 39px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: rgb(234, 63, 63);
+    margin-top: 50px;
+    margin-left: 100px;
 }

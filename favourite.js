@@ -19,7 +19,13 @@ const favouriteArr = JSON.parse(localStorage.getItem(PRODUCT_LS_KEY));
       </li>`;
     }).join('');
 }
-favouriteList.insertAdjacentHTML('beforeend', createMarkup(favouriteArr));
+
+if (favouriteArr.length > 0) {
+  favouriteList.insertAdjacentHTML('beforeend', createMarkup(favouriteArr));
+}
+else {
+    favouriteList.insertAdjacentHTML('beforeend', "You haven't chosen  any travalling yet.. "); 
+}
 
 const favourItems = document.querySelector('.rout-list');
 console.log(favourItems);
