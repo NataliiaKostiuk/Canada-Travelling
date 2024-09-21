@@ -280,8 +280,7 @@ font-weight: 500;
     stroke:white;
 }
 .svg-heart-red {
-    fill: rgb(234, 63, 63);
-    stroke: rgb(234, 63, 63);
+    fill: rgb(234, 63, 63); 
         position: absolute;
             top: 20px;
             right: 30px;
@@ -291,12 +290,3 @@ font-weight: 500;
     
 }
 
-.favourite-list{
-font-weight: 700;
-    font-size: 39px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: rgb(234, 63, 63);
-    margin-top: 50px;
-    margin-left: 100px;
-}
