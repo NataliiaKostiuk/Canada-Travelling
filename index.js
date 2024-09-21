@@ -2,40 +2,32 @@
 
 const container = document.querySelector('.routs');
 console.log(container);
-
-let globalData;
-
-async function serviceCountry() {
-  const resp = await fetch(`https://66ea8ceb55ad32cda4795eb2.mockapi.io/place`);
-
-  if (!resp.ok) {
-    throw new Error(resp.statusText);
-  }
-
-  return resp.json();
-}
-
-serviceCountry()
-  .then(data => {
-    console.log(data);
-    globalData = data;
+  fetch("https://66ea8ceb55ad32cda4795eb2.mockapi.io/place")
+  .then((resp) => {
+    console.log(resp);
+    if (!resp.ok) {
+      throw new Error(resp.statusText || "Примисово прокидаємо в catch");
+    }
+    return resp.json();
   })
-  .catch(err => console.log(err));
+    .then((data) => {
+      console.log(data)
+       container.insertAdjacentHTML('beforeend', createMarkup(data));
+    })
+  .catch((err) => console.log(err));
 
-setTimeout(() => {
-  console.log(globalData);
   
-  function createMarkup() {
-    return globalData.map(({ name, avatar, id }) => {
+  function createMarkup(globalData) {
+    return globalData.map(({ name, avatar, id, link, createdAt }) => {
       return `<li class="rout-list">
-        <h3 class="rout-item">${name}</h3>
         <img class="rout-img" src="${avatar}" alt="${id}">
+        <h3 class="rout-item">${name}</h3>
+        <p class="text">${createdAt}</p>
+        <a href="${link}" class="text">Oficial link</a>
       </li>`;
     }).join('');
   }
   
-  container.insertAdjacentHTML('beforeend', createMarkup());
-}, 1000);
 
 
 

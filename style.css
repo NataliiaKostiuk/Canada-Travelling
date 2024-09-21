@@ -56,7 +56,7 @@ img {
 }
 
 .container {
-    width: 100%;
+    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -69,14 +69,14 @@ img {
           0px 2px 1px 0px #2E2F4214;
   }
 .flag{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 70px;
     margin-right: 60px;
     margin-left: 8px;
 }
 .maps-sign{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .header-container{
@@ -110,7 +110,6 @@ color: rgb(43, 85, 224);
 .secton {
     border: 1px solid rgb(10, 33, 112);
     border-radius: 20px;
-    height: 600px;
     margin-top: 5px;
     padding: 15px;
 }
@@ -157,11 +156,11 @@ color: rgb(43, 85, 224);
     width: 200px;
     height: 250px;
     border-radius: 15px;
-    border: 1px solid white;
+    border: 1px solid rgb(234, 63, 63);
 }
 .fact-title{
-    margin-top: 10px;
-font-weight: 500;
+    margin-top: 20px;
+   font-weight: 500;
     font-size: 39px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -182,7 +181,8 @@ position: relative;
     width: 260px;
     height: 450px;
     border-radius: 20px;
-    background-color: rgb(5, 82, 249);
+    background-color: white;
+    border: 1px solid rgb(0, 21, 255);
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -208,16 +208,29 @@ transform: rotateY(180deg);
 }
 
 .text{
+margin-top: 25px;
 font-weight: 400;
 color: rgb(13, 18, 72)
 }
+.tips{
+    padding: 25px;
+}
+
+/* top rout */
 .routs{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
 }
 .rout-list{
-    width: 240px;
-    height: 280px;
+    width: 330px;
+    height: 500px;
     border: 1px solid #05061a14;
+}
+
+.rout-img{
+    width: 320px;
+    height: 200px;
 }
