@@ -56,14 +56,13 @@ img {
 }
 
 .container {
-    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-  .header {
-      box-shadow:
+.header {
+   box-shadow:
           0px 1px 6px 0px #2E2F4214,
           0px 1px 1px 0px #2E2F4229,
           0px 2px 1px 0px #2E2F4214;
@@ -103,7 +102,7 @@ img {
 .item-link:hover,
 .item-link:focus
 {
-color: rgb(43, 85, 224);
+color: rgb(234, 63, 63);
 }
 
 /*\\\\\\\\\\\\\\ sectoins\\\\\\\\\\\\\\\\\\\\\ */
@@ -208,9 +207,10 @@ transform: rotateY(180deg);
 }
 
 .text{
-margin-top: 25px;
+margin-top: 5px;
 font-weight: 400;
-color: rgb(13, 18, 72)
+color: rgb(11, 12, 21);
+text-align: justify;
 }
 .tips{
     padding: 25px;
@@ -220,17 +220,68 @@ color: rgb(13, 18, 72)
 .routs{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    align-items: center;
-    justify-items: center;
+    gap: clamp(10px, 2vw, 30px);
+
 }
 .rout-list{
-    width: 330px;
+    width: 346px;
     height: 500px;
     border: 1px solid #05061a14;
+    border-radius: 10px;
+    padding: 13px;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
 }
 
 .rout-img{
     width: 320px;
     height: 200px;
+}
+.input{
+    width: 660px;
+        height: 56px;
+        padding: 18px;
+        gap: 10px;
+        border-radius: 10px;
+        background-color: #F7F7F7;
+        border: none;
+        text-indent: 30px;
+        margin-top: 20px;
+       margin-bottom: 20px;
+       margin-left: 110px;
+}
+
+
+.rout-item{
+font-weight: 500;
+    font-size: 29px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: rgb(234, 63, 63);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.link-rout{
+    margin-top: auto;
+}
+
+.svg-heart{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    fill: white;
+    stroke:white;
+}
+.svg-heart-red {
+    fill: rgb(234, 63, 63);
+    stroke: rgb(234, 63, 63);
+        position: absolute;
+            top: 20px;
+            right: 30px;
+            cursor: pointer;
+    
 }
