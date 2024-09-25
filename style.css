@@ -1,8 +1,4 @@
-/* .body {
-    font-family: "Roboto", sans-serif;
-     
-    
-} */
+
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 
 @font-face {
@@ -56,25 +52,23 @@ img {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+ width: 1490px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    background-color:rgb(38, 47, 54) ;
 }
 .header {
-   box-shadow:
-          0px 1px 6px 0px #2E2F4214,
-          0px 1px 1px 0px #2E2F4229,
-          0px 2px 1px 0px #2E2F4214;
+    width: 100%;
+    background-color: rgb(88, 120, 144);
   }
 .flag{
     border-top: 10px;
     border-bottom: 15px;
     width: 100px;
     height: 70px;
-    margin-right: 60px;
-    margin-left: 8px;
 }
+
 .maps-sign{
     width: 70px;
     height: 70px;
@@ -82,6 +76,7 @@ img {
 
 .header-container{
     display: flex;
+    align-items: center;
 }
 .header-list{
     display: flex;
@@ -90,14 +85,14 @@ img {
 
 .item-flag{
     margin-left: auto;
-    margin-right: 80px;
 }
+
 .item-link{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: rgb(10, 33, 112);
+    color: rgb(54, 57, 66);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -108,19 +103,26 @@ color: rgb(234, 63, 63);
 }
 
 /*\\\\\\\\\\\\\\ sectoins\\\\\\\\\\\\\\\\\\\\\ */
+
 .secton {
-    border: 1px solid rgb(10, 33, 112);
+    border: 1px solid rgb(222, 231, 222);
+    box-shadow:
+            0px 2px 6px 0px #2E2F4214,
+            0px 2px 1px 0px #2E2F4229,
+            0px 2px 1px 0px #2E2F4214;
     border-radius: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 15px;
 }
 
 .hero-image{
     width: 100%;
-    height: 100%;
+    height: 600px;
     border-radius: 20px;
     margin-top: 5px;
     position: relative;
+    box-shadow:
+            1px 2px 5px 1px #2E2F4214,
 }
 
 .hero-title{
@@ -128,7 +130,7 @@ color: rgb(234, 63, 63);
     font-size: 56px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: rgb(222, 231, 222);
+    color: rgb(217, 216, 233);
     position: absolute;
     top: 130px;
     left: 75px;
@@ -141,11 +143,17 @@ color: rgb(234, 63, 63);
     font-size: 39px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: rgb(10, 33, 112);
+    color: rgb(54, 57, 66);
      display: flex;
      justify-content: center;
 }
 
+.tips{
+    background-color: rgba(232, 236, 232, 0.974); ;
+}
+.facts .section-title {
+    color: rgb(217, 216, 233);
+}
 .fact-list{
     display: flex;
     flex-wrap: wrap;
@@ -154,10 +162,9 @@ color: rgb(234, 63, 63);
 }
 
 .fact-img{
-    width: 200px;
+    width: 230px;
     height: 250px;
     border-radius: 15px;
-    border: 1px solid rgb(234, 63, 63);
 }
 .fact-title{
     margin-top: 20px;
@@ -182,20 +189,23 @@ position: relative;
     width: 260px;
     height: 450px;
     border-radius: 20px;
-    background-color: white;
-    border: 1px solid rgb(0, 21, 255);
+    background-color: rgb(217, 216, 233);
+    border: 1px solid rgba(135, 138, 135, 0.974);
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 }
-.back-fact-card{
+.back-fact-card{    
+background-color: rgb(217, 216, 233);
 padding: 15px;
 width: 260px;
 height: 450px;
  border-radius: 20px;
-border: 1px solid rgb(0, 21, 255);
-box-shadow: -11px 11px 37px 7px rgb(97, 104, 225);
+    box-shadow:
+            2px 2px 10px 0px rgb(233, 233, 238),
+            2px 2px 1px 0px rgb(233, 233, 237),
+            2px 2px 1px 0px rgb(229, 230, 234);
 position: absolute;
 top: 0%;
 left: 0%;
@@ -204,20 +214,44 @@ backface-visibility: hidden;
 transform: rotateY(180deg);
 }
 
-.wrap-fact-card:hover {
+.wrap-fact-card:hover,
+.wrap-fact-card:focus {
     transform: rotateY(180deg);
 }
 
 .text{
-margin-top: 5px;
-font-weight: 400;
-color: rgb(11, 12, 21);
-text-align: justify;
+margin-top: 15px;
+    font-weight: 600;
+    color: rgb(11, 12, 21);
+    text-align: justify;
+}
+
+.wrap-back-card{
+    border: 10px;
+    border-radius: 20px;
+    border-color: 1px solid rgb(54, 57, 66); ;
 }
 .tips{
     padding: 25px;
 }
-
+.tips-title{
+    margin-bottom: 25px;
+    margin-top: 20px;
+        font-weight: 500;
+        font-size: 39px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: rgb(1, 10, 42);
+    }
+ .text-tips{
+    margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: rgb(11, 12, 21);
+        text-align: justify;
+ }   
 /* top rout */
 .routs{
     margin-top: 15px;
@@ -227,8 +261,9 @@ text-align: justify;
 
 }
 .rout-list{
-    width: 346px;
-    height: 500px;
+    background-color: rgb(217, 216, 233);
+    width: 340px;
+    /* height: 500px; */
     border: 1px solid #05061a14;
     border-radius: 10px;
     padding: 13px;
@@ -288,4 +323,12 @@ font-weight: 500;
             width: 35px;
             height: 30px;
 }
-
+.rout-link{
+    display: block;
+    margin-top: 10px;
+    color: rgb(1, 10, 42);
+}
+.rout-link:hover,
+.rout-link:focus{
+color:rgb(234, 63, 63);
+}
