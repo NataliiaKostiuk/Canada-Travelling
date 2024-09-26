@@ -101,9 +101,7 @@ img {
 {
 color: rgb(234, 63, 63);
 }
-.active-link {
-color: rgb(234, 63, 63);
-}
+
 /*\\\\\\\\\\\\\\ sectoins\\\\\\\\\\\\\\\\\\\\\ */
 
 .secton {
@@ -124,7 +122,6 @@ color: rgb(234, 63, 63);
     height: 600px;
     border-radius: 20px;
     margin-top: 5px;
-    /* position: relative; */
     box-shadow:
             1px 2px 5px 1px #2E2F4214,
 }
@@ -267,7 +264,6 @@ margin-top: 15px;
 .rout-list{
     background-color: rgb(253, 253, 253);
     width: 340px;
-    /* height: 500px; */
     border: 1px solid #05061a14;
     border-radius: 10px;
     padding: 13px;
