@@ -7,7 +7,7 @@ let globalData = [];
 
 async function fetchData() {
   try {
-    const resp = await fetch("https://66eed6173ed5bb4d0bf21c25.mockapi.io/canada");
+    const resp = await fetch("http://66eed6173ed5bb4d0bf21c25.mockapi.io/canada");
     if (!resp.ok) {
       throw new Error(resp.statusText || "Error");
     }
@@ -30,7 +30,7 @@ fetchData();
 
  async function serviceSearchWearter(city) {
   try {
-    const BASE_URL = "https://api.weatherapi.com/v1";
+    const BASE_URL = "http://api.weatherapi.com/v1";
     const API_KEY = "bd3aded53f7b40c49d5231513232108";
     const resp = await fetch(`${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&lang=en`);
 
