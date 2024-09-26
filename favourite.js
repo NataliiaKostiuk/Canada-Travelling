@@ -6,7 +6,7 @@ const favouriteArr = JSON.parse(localStorage.getItem(PRODUCT_LS_KEY));
 
  export function createMarkup(data) {
     return data.map(({ name, avatar, id, link, createdAt,weather }) => {
- const { avgtemp_c, condition: { icon, text } } = weather || {}; 
+ const { avgtemp_c, condition: { icon } } = weather || {}; 
 
     return `<li class="rout-list" data-id="${id}">
       <a href="path-to-large-image1.jpg">
