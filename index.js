@@ -55,7 +55,7 @@ function createMarkup(globalData) {
       </a>
       <h3 class="rout-item">${name}</h3>
       <p class="text">${createdAt}</p>
-      <div class="wrap-weather"
+      <div class="wrap-weather">
       <a class="rout-link" href="${link}" class="link-rout">Official link</a>
       <div class="forecast">
         ${weather ? `

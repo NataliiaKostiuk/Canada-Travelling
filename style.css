@@ -60,18 +60,19 @@ img {
 }
 .header {
     width: 100%;
-    background-color: rgb(88, 120, 144);
+    background-color: rgb(228, 231, 234);
   }
+  
 .flag{
     border-top: 10px;
     border-bottom: 15px;
     width: 100px;
-    height: 70px;
+    height: 80px;
 }
 
 .maps-sign{
     width: 70px;
-    height: 70px;
+    height: 80px;
 }
 
 .header-container{
@@ -140,8 +141,8 @@ color: rgb(234, 63, 63);
 .section-title{
     margin-top: 25px;
     margin-bottom: 30px;
-    font-weight: 800;
-    font-size: 39px;
+    font-weight: 900;
+    font-size: 49px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: rgb(54, 57, 66);
@@ -238,21 +239,29 @@ margin-top: 15px;
 .tips-title{
     margin-bottom: 25px;
     margin-top: 20px;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 39px;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        color: rgb(1, 10, 42);
+        color:rgb(234, 63, 63);
     }
  .text-tips{
     margin-bottom: 25px;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: rgb(11, 12, 21);
         text-align: justify;
- }   
+ }  
+ .span-tips{
+    margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: rgb(11, 12, 21);
+ }
 /* top rout */
 .routs{
     margin-top: 15px;
