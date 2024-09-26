@@ -314,6 +314,7 @@ font-weight: 500;
     fill: white;
     stroke:white;
 }
+
 .svg-heart-red {
     fill: rgb(234, 63, 63); 
         position: absolute;
@@ -323,10 +324,13 @@ font-weight: 500;
             width: 35px;
             height: 30px;
 }
+
 .rout-link{
     display: block;
     margin-top: 10px;
     color: rgb(1, 10, 42);
+    transition: color 650ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .rout-link:hover,
 .rout-link:focus{
