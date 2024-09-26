@@ -7,7 +7,7 @@ let globalData = [];
 
 async function fetchData() {
   try {
-    const resp = await fetch("http://66eed6173ed5bb4d0bf21c25.mockapi.io/canada");
+    const resp = await fetch("https://66eed6173ed5bb4d0bf21c25.mockapi.io/canada");
     if (!resp.ok) {
       throw new Error(resp.statusText || "Error");
     }
