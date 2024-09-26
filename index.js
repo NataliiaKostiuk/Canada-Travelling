@@ -30,7 +30,7 @@ fetchData();
 
  async function serviceSearchWearter(city) {
   try {
-    const BASE_URL = "http://api.weatherapi.com/v1";
+    const BASE_URL = "https://api.weatherapi.com/v1";
     const API_KEY = "bd3aded53f7b40c49d5231513232108";
     const resp = await fetch(`${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&lang=en`);
 
