@@ -101,7 +101,9 @@ img {
 {
 color: rgb(234, 63, 63);
 }
-
+.active-link {
+color: rgb(234, 63, 63);
+}
 /*\\\\\\\\\\\\\\ sectoins\\\\\\\\\\\\\\\\\\\\\ */
 
 .secton {
@@ -130,7 +132,7 @@ color: rgb(234, 63, 63);
     font-size: 56px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: rgb(217, 216, 233);
+    color: rgb(253, 253, 253);
     position: absolute;
     top: 130px;
     left: 75px;
@@ -149,7 +151,7 @@ color: rgb(234, 63, 63);
 }
 
 .tips{
-    background-color: rgba(232, 236, 232, 0.974); ;
+    background-color: rgb(253, 253, 253); 
 }
 .facts .section-title {
     color: rgb(217, 216, 233);
@@ -189,7 +191,7 @@ position: relative;
     width: 260px;
     height: 450px;
     border-radius: 20px;
-    background-color: rgb(217, 216, 233);
+    background-color: rgb(253, 253, 253);
     border: 1px solid rgba(135, 138, 135, 0.974);
     display: flex;
     flex-direction: column;
@@ -261,7 +263,7 @@ margin-top: 15px;
 
 }
 .rout-list{
-    background-color: rgb(217, 216, 233);
+    background-color: rgb(253, 253, 253);
     width: 340px;
     /* height: 500px; */
     border: 1px solid #05061a14;
@@ -331,4 +333,22 @@ font-weight: 500;
 .rout-link:hover,
 .rout-link:focus{
 color:rgb(234, 63, 63);
+}
+
+.wrap-weather{
+    display: flex;
+    align-items: center;
+}
+.forecast{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.degree{
+ font-weight: 600;
+ font-size: 24px;
+ line-height: 1.11;
+ letter-spacing: 0.02em;
+ color: ( 1, 10, 42);
 }
