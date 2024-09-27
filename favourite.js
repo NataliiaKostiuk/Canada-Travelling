@@ -9,9 +9,7 @@ const favouriteArr = JSON.parse(localStorage.getItem(PRODUCT_LS_KEY));
  const { avgtemp_c, condition: { icon } } = weather || {}; 
 
     return `<li class="rout-list" data-id="${id}">
-      <a href="path-to-large-image1.jpg">
         <img class="rout-img" src="${avatar}" alt="${id}"/>
-      </a>
       <h3 class="rout-item">${name}</h3>
       <p class="text">${createdAt}</p>
       <div class="wrap-weather"
@@ -55,3 +53,13 @@ function hendlerClickRemove(evt) {
   card.remove();
 }
 
+const navLinks = document.querySelectorAll('.item-link');
+const currentPath = window.location.pathname;
+console.log(currentPath);
+
+for (const link of navLinks) {
+    if (link.href.includes(currentPath)) {
+        link.classList.add("active-page");
+        break;
+    }
+}

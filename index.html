@@ -15,6 +15,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./welcome.js"></script>
     <title>Canada</title>
   </head>
   <body class="container">
@@ -42,8 +43,7 @@
           </li>
         </ul>
         <div class="item-flag">
-          <a href="https://www.google.com/maps/@?api=1&map_action=map&canada"
-            >
+          <a href="https://www.google.com/maps/@?api=1&map_action=map&canada"target="_blank">
             <img
               class="maps-sign"
               src="data:image/png;base64,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"
@@ -58,9 +58,7 @@
         <div>
           <img
             class="hero-image"
-            src="https://img.goodfon.com/wallpaper/big/a/69/kanada-gorod-toronto-noch-luna-svet-ogni.webp"
-            alt="image"
-          />
+            src="https://img.goodfon.com/wallpaper/big/a/69/kanada-gorod-toronto-noch-luna-svet-ogni.webp"/>
           <h1 class="hero-title">Welcome to Canada</h1>
         </div>
       </section>
@@ -157,7 +155,7 @@ In Canada moose can be found in almost every region, excluding the Arctic and Va
               </div>
             </div>
           </li>
-            <li class="fact-item"></li>
+            <li class="fact-item">
             <div class="wrap-fact-card">
               <div class="fact-cart">
                 <img
@@ -247,6 +245,6 @@ others more obscure, requiring a bit of a hike rather than merely seeing them fr
     <span class="footer-p" >Enjoy travelling!</span>
     <span>Collect moments, not things...</span>
     </footer>
-    <script type="module" src="./index.js"></script>
+     <script type="module" src="./index.js"></script>
   </body>
 </html>

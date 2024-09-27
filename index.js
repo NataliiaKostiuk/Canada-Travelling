@@ -2,7 +2,16 @@ const input = document.querySelector('.input');
 const container = document.querySelector('.routs');
 input.addEventListener('input', handelSearch);
 
+const navLinks = document.querySelectorAll('.item-link');
+const currentPath = window.location.pathname;
+console.log(currentPath);
 
+for (const link of navLinks) {
+    if (link.href.includes(currentPath)) {
+        link.classList.add("active-page");
+        break;
+    }
+}
 let globalData = []; 
 
 async function fetchData() {
@@ -50,13 +59,11 @@ function createMarkup(globalData) {
     const { avgtemp_c, condition: { icon, text } } = weather || {}; 
 
     return `<li class="rout-list" data-id="${id}">
-      <a href="path-to-large-image1.jpg">
         <img class="rout-img" src="${avatar}" alt="${id}"/>
-      </a>
       <h3 class="rout-item">${name}</h3>
       <p class="text">${createdAt}</p>
       <div class="wrap-weather">
-      <a class="rout-link" href="${link}" class="link-rout">Official link</a>
+      <a class="rout-link" href="${link}" target="_blank">Official link</a>
       <div class="forecast">
         ${weather ? `
           <img src="${icon}" alt="Weather icon" />
