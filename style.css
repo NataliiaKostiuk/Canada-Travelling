@@ -134,7 +134,7 @@ color: rgb(234, 63, 63);
     font-size: 56px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: rgb(253, 253, 253);
+    color: rgb(231, 226, 226);
     position: absolute;
     top: 70px;
     left: 75px;
@@ -154,7 +154,7 @@ color: rgb(234, 63, 63);
 
 
 .facts .section-title {
-    color: rgb(217, 216, 233);
+    color: rgb(231, 226, 226);
 }
 .fact-list{
     display: flex;
@@ -191,7 +191,7 @@ position: relative;
     width: 260px;
     height: 450px;
     border-radius: 20px;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(231, 226, 226);
     border: 1px solid rgba(135, 138, 135, 0.974);
     display: flex;
     flex-direction: column;
@@ -282,7 +282,7 @@ margin-top: 15px;
 
 }
 .rout-list{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(231, 226, 226);
     width: 340px;
     border: 1px solid #05061a14;
     border-radius: 10px;
