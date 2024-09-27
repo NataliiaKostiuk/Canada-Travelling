@@ -61,8 +61,10 @@ img {
 .header {
     width: 100%;
     background-color: rgb(228, 231, 234);
+        background-image:
+                linear-gradient(rgba(171, 166, 166, 0.6), rgba(28, 27, 27, 0.6));
   }
-  
+
 .flag{
     border-top: 10px;
     border-bottom: 15px;
@@ -90,9 +92,9 @@ img {
 
 .item-link{
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.11;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     color: rgb(54, 57, 66);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -150,9 +152,7 @@ color: rgb(234, 63, 63);
      justify-content: center;
 }
 
-.tips{
-    background-color: rgb(253, 253, 253); 
-}
+
 .facts .section-title {
     color: rgb(217, 216, 233);
 }
@@ -233,8 +233,10 @@ margin-top: 15px;
     border-radius: 20px;
     border-color: 1px solid rgb(54, 57, 66); ;
 }
+
 .tips{
     padding: 25px;
+    background-color: rgb(217, 216, 233);
 }
 .tips-title{
     margin-bottom: 25px;
@@ -261,6 +263,15 @@ margin-top: 15px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: rgb(11, 12, 21);
+ }
+ .wrap-tips{
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+ }
+ .img-tips{
+    width: 550px;
+    height: 320px;
  }
 /* top rout */
 .routs{
@@ -362,4 +373,32 @@ color:rgb(234, 63, 63);
  line-height: 1.11;
  letter-spacing: 0.02em;
  color: ( 1, 10, 42);
+}
+
+
+.footer {
+    position: relative;
+    background-image:
+        linear-gradient(rgba(171, 166, 166, 0.6), rgba(28, 27, 27, 0.6)),
+        url('https://img.goodfon.com/wallpaper/big/c/43/priroda-gory-nebo-skaly-blake-randall-kanada-canada-tuman.webp');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: rgba(135, 138, 135, 0.974);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.footer-text {
+   position: absolute;
+}
+
+.footer-p{
+    margin-right: 15px;
 }
