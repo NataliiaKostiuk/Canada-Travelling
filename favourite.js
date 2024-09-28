@@ -1,19 +1,20 @@
+import { addClassActive } from "./handle.js";
 
+addClassActive();
 const PRODUCT_LS_KEY = 'checkout';
 
 const favouriteList = document.querySelector('.favourite-list');
 const favouriteArr = JSON.parse(localStorage.getItem(PRODUCT_LS_KEY));
 
- export function createMarkup(data) {
+function createMarkup(data) {
     return data.map(({ name, avatar, id, link, createdAt,weather }) => {
- const { avgtemp_c, condition: { icon } } = weather || {}; 
-
+    const { avgtemp_c, condition: { icon } } = weather || {}; 
     return `<li class="rout-list" data-id="${id}">
         <img class="rout-img" src="${avatar}" alt="${id}"/>
       <h3 class="rout-item">${name}</h3>
       <p class="text">${createdAt}</p>
-      <div class="wrap-weather"
-      <a class="rout-link" href="${link}" class="link-rout">Official link</a>
+      <div class="wrap-weather">
+       <a class="rout-link" href="${link}" target="_blank">Official link</a>
       <div class="forecast">
         ${weather ? `
           <img src="${icon}" alt="Weather icon" />
@@ -53,13 +54,4 @@ function hendlerClickRemove(evt) {
   card.remove();
 }
 
-const navLinks = document.querySelectorAll('.item-link');
-const currentPath = window.location.pathname;
-console.log(currentPath);
 
-for (const link of navLinks) {
-    if (link.href.includes(currentPath)) {
-        link.classList.add("active-page");
-        break;
-    }
-}
